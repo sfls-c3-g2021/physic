@@ -1,0 +1,385 @@
+backend:
+  name: git-gateway
+  branch: master
+media_folder: source/images
+public_folder: /images
+publish_mode: editorial_workflow
+pages:
+  enabled: true
+  config:
+    label: Page
+    delete: false
+    editor:
+      preview: true
+over_format: true
+collections:
+  - name: posts
+    label: Post
+    folder: source/_posts
+    sort: date:desc
+    create: true
+    editor:
+      preview: true
+    fields:
+      - label: Title
+        name: title
+        widget: string
+      - label: Publish Date
+        name: date
+        widget: datetime
+        format: YYYY-MM-DD HH:mm:ss
+        dateFormat: YYYY-MM-DD
+        timeFormat: HH:mm:ss
+        required: false
+      - label: Updeted Date
+        name: updated
+        widget: datetime
+        format: YYYY-MM-DD HH:mm:ss
+        required: false
+        dateFormat: YYYY-MM-DD
+        timeFormat: HH:mm:ss
+      - label: Tags
+        name: tags
+        widget: list
+        required: false
+      - label: Categories
+        name: categories
+        widget: list
+        required: false
+      - label: Body
+        name: body
+        widget: markdown
+        required: false
+      - label: Permalink
+        name: permalink
+        widget: string
+        required: false
+      - label: Comments
+        name: comments
+        widget: boolean
+        default: true
+        required: false
+  - name: all_posts
+    fields: &ref_0
+      - label: Title
+        name: title
+        widget: string
+      - label: Publish Date
+        name: date
+        widget: datetime
+        dateFormat: YYYY-MM-DD
+        timeFormat: HH:mm:ss
+        format: YYYY-MM-DD HH:mm:ss
+        required: false
+      - label: Tags
+        name: tags
+        widget: list
+        required: false
+      - label: Categories
+        name: categories
+        widget: list
+        required: false
+      - label: Body
+        name: body
+        widget: markdown
+        required: false
+      - label: Permalink
+        name: permalink
+        widget: string
+        required: false
+      - label: Comments
+        name: comments
+        widget: boolean
+        default: true
+        required: false
+    label: Post
+    folder: source/_posts
+    create: true
+    editor:
+      preview: true
+  - label: Page
+    name: pages
+    delete: false
+    files:
+      - name: categories-index.md
+        label: categories
+        file: source\categories\index.md
+        editor:
+          preview: true
+        fields: *ref_0
+      - name: tags-index.md
+        label: tags
+        file: source\tags\index.md
+        editor:
+          preview: true
+        fields: *ref_0
+      - name: guestbook-index.md
+        label: 留言
+        file: source\guestbook\index.md
+        editor:
+          preview: true
+        fields: *ref_0
+      - name: css-brands.min.css
+        label: ''
+        file: source\css\brands.min.css
+        editor:
+          preview: true
+        fields: *ref_0
+      - name: css-all.min.css
+        label: ''
+        file: source\css\all.min.css
+        editor:
+          preview: true
+        fields: *ref_0
+      - name: css-css2.css
+        label: ''
+        file: source\css\css2.css
+        editor:
+          preview: true
+        fields: *ref_0
+      - name: css-light.min.css
+        label: ''
+        file: source\css\light.min.css
+        editor:
+          preview: true
+        fields: *ref_0
+      - name: css-fontawesome.min.css
+        label: ''
+        file: source\css\fontawesome.min.css
+        editor:
+          preview: true
+        fields: *ref_0
+      - name: css-odometer-theme-minimal.css
+        label: ''
+        file: source\css\odometer-theme-minimal.css
+        editor:
+          preview: true
+        fields: *ref_0
+      - name: css-duotone.min.css
+        label: ''
+        file: source\css\duotone.min.css
+        editor:
+          preview: true
+        fields: *ref_0
+      - name: css-regular.min.css
+        label: ''
+        file: source\css\regular.min.css
+        editor:
+          preview: true
+        fields: *ref_0
+      - name: css-solid.min.css
+        label: ''
+        file: source\css\solid.min.css
+        editor:
+          preview: true
+        fields: *ref_0
+      - name: css-style.styl
+        label: ''
+        file: source\css\style.styl
+        editor:
+          preview: true
+        fields: *ref_0
+      - name: css-svg-with-js.min.css
+        label: ''
+        file: source\css\svg-with-js.min.css
+        editor:
+          preview: true
+        fields: *ref_0
+      - name: css-thin.min.css
+        label: ''
+        file: source\css\thin.min.css
+        editor:
+          preview: true
+        fields: *ref_0
+      - name: css-v4-shims.min.css
+        label: ''
+        file: source\css\v4-shims.min.css
+        editor:
+          preview: true
+        fields: *ref_0
+      - name: css-v4-font-face.min.css
+        label: ''
+        file: source\css\v4-font-face.min.css
+        editor:
+          preview: true
+        fields: *ref_0
+      - name: css-v5-font-face.min.css
+        label: ''
+        file: source\css\v5-font-face.min.css
+        editor:
+          preview: true
+        fields: *ref_0
+      - name: js-code-copy.js
+        label: ''
+        file: source\js\code-copy.js
+        editor:
+          preview: true
+        fields: *ref_0
+      - name: js-back2top.js
+        label: ''
+        file: source\js\back2top.js
+        editor:
+          preview: true
+        fields: *ref_0
+      - name: js-dark-light-toggle.js
+        label: ''
+        file: source\js\dark-light-toggle.js
+        editor:
+          preview: true
+        fields: *ref_0
+      - name: js-header-shrink.js
+        label: ''
+        file: source\js\header-shrink.js
+        editor:
+          preview: true
+        fields: *ref_0
+      - name: js-lazyload.js
+        label: ''
+        file: source\js\lazyload.js
+        editor:
+          preview: true
+        fields: *ref_0
+      - name: js-local-search.js
+        label: ''
+        file: source\js\local-search.js
+        editor:
+          preview: true
+        fields: *ref_0
+      - name: js-main.js
+        label: ''
+        file: source\js\main.js
+        editor:
+          preview: true
+        fields: *ref_0
+      - name: js-odometer.min.js
+        label: ''
+        file: source\js\odometer.min.js
+        editor:
+          preview: true
+        fields: *ref_0
+      - name: js-runtime.js
+        label: ''
+        file: source\js\runtime.js
+        editor:
+          preview: true
+        fields: *ref_0
+      - name: js-toc-toggle.js
+        label: ''
+        file: source\js\toc-toggle.js
+        editor:
+          preview: true
+        fields: *ref_0
+      - name: js-toc.js
+        label: ''
+        file: source\js\toc.js
+        editor:
+          preview: true
+        fields: *ref_0
+      - name: js-utils.js
+        label: ''
+        file: source\js\utils.js
+        editor:
+          preview: true
+        fields: *ref_0
+      - name: css-common-animated.styl
+        label: ''
+        file: source\css\common\animated.styl
+        editor:
+          preview: true
+        fields: *ref_0
+      - name: css-common-basic.styl
+        label: ''
+        file: source\css\common\basic.styl
+        editor:
+          preview: true
+        fields: *ref_0
+      - name: css-common-markdown.styl
+        label: ''
+        file: source\css\common\markdown.styl
+        editor:
+          preview: true
+        fields: *ref_0
+      - name: css-common-redefine-theme.styl
+        label: ''
+        file: source\css\common\redefine-theme.styl
+        editor:
+          preview: true
+        fields: *ref_0
+      - name: css-common-variables.styl
+        label: ''
+        file: source\css\common\variables.styl
+        editor:
+          preview: true
+        fields: *ref_0
+      - name: css-layout-article-content.styl
+        label: ''
+        file: source\css\layout\article-content.styl
+        editor:
+          preview: true
+        fields: *ref_0
+      - name: css-layout-archive-content.styl
+        label: ''
+        file: source\css\layout\archive-content.styl
+        editor:
+          preview: true
+        fields: *ref_0
+      - name: css-layout-category-list.styl
+        label: ''
+        file: source\css\layout\category-list.styl
+        editor:
+          preview: true
+        fields: *ref_0
+      - name: css-layout-home-content.styl
+        label: ''
+        file: source\css\layout\home-content.styl
+        editor:
+          preview: true
+        fields: *ref_0
+      - name: css-layout-category-content.styl
+        label: ''
+        file: source\css\layout\category-content.styl
+        editor:
+          preview: true
+        fields: *ref_0
+      - name: js-libs-anime.min.js
+        label: ''
+        file: source\js\libs\anime.min.js
+        editor:
+          preview: true
+        fields: *ref_0
+      - name: js-libs-pjax.min.js
+        label: ''
+        file: source\js\libs\pjax.min.js
+        editor:
+          preview: true
+        fields: *ref_0
+      - name: css-layout-tag-content.styl
+        label: ''
+        file: source\css\layout\tag-content.styl
+        editor:
+          preview: true
+        fields: *ref_0
+      - name: css-layout-page.styl
+        label: ''
+        file: source\css\layout\page.styl
+        editor:
+          preview: true
+        fields: *ref_0
+      - name: css-common-codeblock-code-block.styl
+        label: ''
+        file: source\css\common\codeblock\code-block.styl
+        editor:
+          preview: true
+        fields: *ref_0
+      - name: css-common-codeblock-code-theme.styl
+        label: ''
+        file: source\css\common\codeblock\code-theme.styl
+        editor:
+          preview: true
+        fields: *ref_0
+      - name: css-common-codeblock-highlight.styl
+        label: ''
+        file: source\css\common\codeblock\highlight.styl
+        editor:
+          preview: true
+        fields: *ref_0
