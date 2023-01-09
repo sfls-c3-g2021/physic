@@ -5,3 +5,7 @@
 [submodule "themes/redefine"]
     path = hexo-theme-redefine
     url = https://github.com/EvanNotFound/hexo-theme-redefine.git
+
+[submodule ".deploy_git"]
+    path = .deploy_git
+    url = https://github.com/sfls-c3-g2021/physics-lab.git
