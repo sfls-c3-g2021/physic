@@ -11,7 +11,7 @@
 # The next example adds a new rule to accomplish that:
 
 /admin/*  /admin/:splat  200!  Role=administrator,editor,volunteer,leader
-/admin/*  /login  401!  Role=administrator
+/admin/*  /login  401!  
 
 # The second rule in the example is what we call a fallback rule. 
 # It tells Netlify’s CDN that it must redirect every visitor that’s 
