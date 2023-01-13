@@ -8,7 +8,7 @@ publish_mode: editorial_workflow
 
 # pages auto generate
 pages: 
-  enabled: true
+  enabled: false
   # over page collection config
   # if fields not set, would use posts fields config
   config:
@@ -37,9 +37,10 @@ collections:
     fields: # The fields each document in this collection have
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD HH:mm:ss", dateFormat: "YYYY-MM-DD", timeFormat: "HH:mm:ss", required: false}
-      - {label: "Updeted Date", name: "updated", widget: "datetime", format: "YYYY-MM-DD HH:mm:ss", required: false}
+      - {label: "Updated Date", name: "updated", widget: "datetime", format: "YYYY-MM-DD HH:mm:ss", required: false}
       - {label: "Tags", name: "tags", widget: "list", required: false}
       - {label: "Categories", name: "categories", widget: "list", required: false}
       - {label: "Body", name: "body", widget: "markdown", required: false}
       - {label: "Permalink", name: "permalink", widget: "string", required: false}
       - {label: "Comments", name: "comments", widget: "boolean", default: true, required: false}
+      - {label: "Sticky", name: "sticky", widget: "boolean", default: false, required: false}
