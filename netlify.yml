@@ -35,12 +35,12 @@ collections:
     editor:
       preview: true
     fields: # The fields each document in this collection have
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD HH:mm:ss", dateFormat: "YYYY-MM-DD", timeFormat: "HH:mm:ss", required: false}
-      - {label: "Updated Date", name: "updated", widget: "datetime", format: "YYYY-MM-DD HH:mm:ss", required: false}
-      - {label: "Tags", name: "tags", widget: "list", required: false}
-      - {label: "Categories", name: "categories", widget: "list", required: false}
-      - {label: "Body", name: "body", widget: "markdown", required: false}
-      - {label: "Permalink", name: "permalink", widget: "string", required: false}
-      - {label: "Comments", name: "comments", widget: "boolean", default: true, required: false}
-      - {label: "Sticky", name: "sticky", widget: "boolean", default: false, required: false}
+      - {label: "标题", name: "title", widget: "string"}
+      - {label: "发布日期", name: "date", widget: "datetime", format: "YYYY-MM-DD HH:mm:ss", dateFormat: "YYYY-MM-DD", timeFormat: "HH:mm:ss", required: false}
+      - {label: "修改日期", name: "updated", widget: "datetime", format: "YYYY-MM-DD HH:mm:ss", required: false}
+      - {label: "标签(支持多个)", name: "tags", widget: "list", required: false}
+      #- {label: "分类(禁用)", name: "categories", widget: "list", required: false}
+      - {label: "正文", name: "body", widget: "markdown", required: false}
+      - {label: "永久链接地址", name: "permalink", widget: "string", required: false}
+      - {label: "显示评论", name: "comments", widget: "boolean", default: true, required: false}
+      - {label: "置顶", name: "sticky", widget: "boolean", default: false, required: false}
