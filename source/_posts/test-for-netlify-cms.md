@@ -4,6 +4,4 @@ date: 2023-01-09 22:18:50
 updated: 2023-01-09 22:18:50
 comments: true
 ---
-![test](source/images/redefine-logo.webp "test")
-
-t﻿est
+![test](/images/loading.svg "test")
