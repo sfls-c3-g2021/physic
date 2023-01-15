@@ -27,9 +27,10 @@ scripts:
 # A list of collections the CMS should be able to edit
 collections:
   # Used in routes, ie.: /admin/collections/:slug/edit
-  - name: "posts"
+  - name: "post_edit"
     # Used in the UI, ie.: "New Post"
     label: "文章"
+    description: "默认文章分类"
     folder: "source/_posts" # The path to the folder where the documents are stored
     sort: "date:desc"
     create: true # Allow users to create new documents in this collection
@@ -49,3 +50,22 @@ collections:
       - {label: "正文", name: "body", widget: "markdown", required: false}
       - {label: "永久链接地址", name: "permalink", widget: "string", required: false}
       - {label: "显示评论", name: "comments", widget: "boolean", default: true, required: false}
+  - name: "page_edit"
+    label: "页面"
+    description: "默认页面分类"
+    folder: "source"
+    sort: "date:desc"
+    create: true
+    editor:
+      preview: true
+    fields:
+      - {label: "标题", name: "title", widget: "string"}
+      - {label: "发布日期", name: "date", widget: "datetime", format: "YYYY-MM-DD HH:mm:ss", dateFormat: "YYYY-MM-DD", timeFormat: "HH:mm:ss", required: false}
+      - {label: "修改日期", name: "updated", widget: "datetime", format: "YYYY-MM-DD HH:mm:ss", required: false}
+      - {label: "描述", name: "description", widget: "text", required: false}
+      - {label: "正文", name: "body", widget: "markdown", required: false}
+      - {label: "永久链接地址", name: "permalink", widget: "string", required: false}
+      - {label: "显示评论", name: "comments", widget: "boolean", default: true, required: false}
+      - {label: "样式(无需填写)", name: "layout", widget: "select", options: ["post", "tags", "categories"], required: false}
+        
+
