@@ -6,6 +6,8 @@ media_folder: source/images
 public_folder: /images
 publish_mode: editorial_workflow
 
+search: false
+
 # pages auto generate
 pages: 
   enabled: true
