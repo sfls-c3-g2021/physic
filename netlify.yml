@@ -42,7 +42,7 @@ collections:
       - {label: "标签(支持多个)", name: "tags", widget: "list", required: false}
       - {label: "置顶", name: "sticky", widget: "boolean", default: false, required: false}
       - {label: "封面图片", name: "cover", widget: "image", choose_url: true, default: false, required: false}
-      - {label: "描述", name: "description", widget: "text"}
+      - {label: "描述", name: "description", widget: "text", required: false}
       #- {label: "博客样式(禁用)", name: "layout", widget: "select", options: ["blog", "tags", "categories"], default: "blog", required: false}
       #- {label: "从首页隐藏", name: "hide", widget: "boolean", default: false, required: false}
       #- {label: "分类(禁用)", name: "categories", widget: "list", required: false}
