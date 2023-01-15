@@ -8,7 +8,7 @@ publish_mode: editorial_workflow
 
 # pages auto generate
 pages: 
-  enabled: false
+  enabled: true
   # over page collection config
   # if fields not set, would use posts fields config
   config:
