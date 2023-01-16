@@ -11,8 +11,11 @@
 # The next example adds a new rule to accomplish that:
 
 /admin/#/collections/page_edit/*  /admin/#/collections/page_edit/  200! Role=admin
+/admin/#/collections/page_edit/*  /admin/  401!
 /admin/#/collections/pages/*  /admin/#/collections/pages/  200! Role=admin
+/admin/#/collections/pages/*  /admin/  401!
 /admin/#/collections/all_posts/*  /admin/#/collections/all_posts/  200! Role=admin,editor
+/admin/#/collections/all_posts/*  /admin/  401!
 /admin/*  /admin/:splat  200!  Role=admin,editor,volunteer
 /admin/*  /login  401!
 
