@@ -20,7 +20,7 @@ comments: true
   
 2. 在**Collections**中选择**文章**
   
-  ![](file://C:\Users\ayingsh\AppData\Roaming\marktext\images\2023-01-17-10-57-47-image.png)
+  ![](https://pic.imgdb.cn/item/63c61f25be43e0d30e6638ce.jpg)
   
 3. 点击**New 文章**，新建文章
   
