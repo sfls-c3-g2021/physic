@@ -8,7 +8,7 @@ sticky: true
 cover: false
 comments: true
 ---
-# Netlify CMS 使用说
+# Netlify CMS 使用说明
 
 ### 1.新建文章
 
