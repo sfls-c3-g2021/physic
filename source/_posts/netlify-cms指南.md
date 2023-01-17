@@ -8,15 +8,15 @@ sticky: true
 cover: false
 comments: true
 ---
-# Netlify CMS 使用说明
-
+# Netlify CMS 使用说
+<﻿!--more-->
 ### 1.新建文章
 
 ![](https://pic.imgdb.cn/item/63c60d38be43e0d30e4972a6.jpg)
 
 1. 在导航栏中选择**Contents**
   
-  ![](https://pic.imgdb.cn/item/63c60e5fbe43e0d30e4ad609.jpg)
+  ![](https://pic.imgdb.cn/item/63c62064be43e0d30e690550.jpg)
   
 2. 在**Collections**中选择**文章**
   
