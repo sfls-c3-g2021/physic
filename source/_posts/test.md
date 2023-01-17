@@ -2,8 +2,8 @@
 title: Netlify CMS 使用说明
 date: 2023-01-17 11:01:07
 updated: 2023-01-17 11:01:07
-sticky: false
-cover: false
+sticky: true
+cover: https://img-blog.csdnimg.cn/img_convert/6ecad29c18fd12da99229ef98a0b4f4b.png
 comments: true
 ---
 <!--StartFragment-->
