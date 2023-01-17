@@ -52,7 +52,5 @@ comments: true
 ![](https://pic.imgdb.cn/item/63c61287be43e0d30e5191f8.jpg)
 
 1. 点击 **Save** 按钮
-
-!\[](C:\Users\ayingsh\AppData\Roaming\marktext\images\2023-01-17-11-16-28-image.png)![](file://C:%5CUsers%5Cayingsh%5CAppData%5CRoaming%5Cmarktext%5Cimages%5C2023-01-17-11-16-28-image.png)
 2. 点击 **Status** ，选择 **Ready** 选项
 3. 最后，点击 **Publish** ,选择 **Publish now**
