@@ -10,6 +10,7 @@
 # to redirect unauthorized users to a specific page, like a login page. 
 # The next example adds a new rule to accomplish that:
 
+/admin/#/collections/config/*  /admin/#/collections/config/* 200! Role=admin
 /admin/#/collections/page_edit/*  /admin/#/collections/page_edit/  200! Role=admin
 /admin/#/collections/page_edit/*  /admin/  401!
 /admin/#/collections/pages/*  /admin/#/collections/pages/  200! Role=admin
