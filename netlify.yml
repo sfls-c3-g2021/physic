@@ -34,18 +34,17 @@ collections:
   - name: "config"
     label: "配置文件"
     description: "默认文章分类"
-    folder: "" # The path to the folder where the documents are stored
-    sort: "date:desc"
-    create: true # Allow users to create new documents in this collection
-    editor:
-      preview: true
-    fields: # The fields each document in this collection have
-      - {label: "标题", name: "title", widget: "string"}
-      - {label: "描述", name: "description", widget: "text", required: false}
-      #- {label: "博客样式(禁用)", name: "layout", widget: "select", options: ["blog", "tags", "categories"], default: "blog", required: false}
-      #- {label: "从首页隐藏", name: "hide", widget: "boolean", default: false, required: false}
-      #- {label: "分类(禁用)", name: "categories", widget: "list", required: false}
-      - {label: "正文", name: "body", widget: "markdown", required: false}
+    files:
+      - label: "Site"
+        name: "site_configuration"
+        file: "_config.yml"
+        fields:
+          - {label: "内容", name: "body", widget: "markdown"}
+      - label: "Theme"
+        name: "theme_configuration"
+        file: "themes/redefine/_config.yml"
+        fields:
+          - {label: "内容", name: "body", widget: "markdown"}
   - name: "post_edit"
     # Used in the UI, ie.: "New Post"
     label: "文章"
@@ -66,7 +65,7 @@ collections:
       #- {label: "博客样式(禁用)", name: "layout", widget: "select", options: ["blog", "tags", "categories"], default: "blog", required: false}
       #- {label: "从首页隐藏", name: "hide", widget: "boolean", default: false, required: false}
       #- {label: "分类(禁用)", name: "categories", widget: "list", required: false}
-      - {label: "正文", name: "body", widget: "markdown", required: false}
+      - {label: "正文", name: "body", widget: "markdown"}
       - {label: "永久链接地址", name: "permalink", widget: "string", required: false}
       - {label: "显示评论", name: "comments", widget: "boolean", default: true, required: false}
     
