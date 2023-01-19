@@ -29,6 +29,15 @@ scripts:
 # A list of collections the CMS should be able to edit
 collections:
   # Used in routes, ie.: /admin/collections/:slug/edit
+  - name: "config"
+    label: "配置文件"
+    files:
+      - file: "_config.yml"
+        label: "Site"
+        name: "site_config"
+      - file: "themes/redefine/_config.yml"
+        label: "Theme"
+        name: "theme_config"
   - name: "post_edit"
     # Used in the UI, ie.: "New Post"
     label: "文章"
@@ -52,6 +61,7 @@ collections:
       - {label: "正文", name: "body", widget: "markdown", required: false}
       - {label: "永久链接地址", name: "permalink", widget: "string", required: false}
       - {label: "显示评论", name: "comments", widget: "boolean", default: true, required: false}
+    
   #- name: "page_edit"
   #  label: "页面"
   #  description: "默认页面分类"
