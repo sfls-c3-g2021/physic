@@ -8,6 +8,8 @@ publish_mode: editorial_workflow
 
 search: false
 
+site_url: https://physics-lab-novel.netlify.app/
+
 # pages auto generate
 pages: 
   enabled: false
@@ -31,13 +33,19 @@ collections:
   # Used in routes, ie.: /admin/collections/:slug/edit
   - name: "config"
     label: "配置文件"
-    files:
-      - file: "_config.yml"
-        label: "Site"
-        name: "site_config"
-      - file: "themes/redefine/_config.yml"
-        label: "Theme"
-        name: "theme_config"
+    description: "默认文章分类"
+    folder: "" # The path to the folder where the documents are stored
+    sort: "date:desc"
+    create: true # Allow users to create new documents in this collection
+    editor:
+      preview: true
+    fields: # The fields each document in this collection have
+      - {label: "标题", name: "title", widget: "string"}
+      - {label: "描述", name: "description", widget: "text", required: false}
+      #- {label: "博客样式(禁用)", name: "layout", widget: "select", options: ["blog", "tags", "categories"], default: "blog", required: false}
+      #- {label: "从首页隐藏", name: "hide", widget: "boolean", default: false, required: false}
+      #- {label: "分类(禁用)", name: "categories", widget: "list", required: false}
+      - {label: "正文", name: "body", widget: "markdown", required: false}
   - name: "post_edit"
     # Used in the UI, ie.: "New Post"
     label: "文章"
