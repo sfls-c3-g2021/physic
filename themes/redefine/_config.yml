@@ -6,7 +6,7 @@ base_info:
   author: Physics-Lab-Bromine # Author name
   url: https://physics-lab-novel.netlify.app # Site url
   # Logo image (You can use local image, image external link or don’t fill)
-  logo_img: # logo image on the left of the navigation bar
+  logo_img: https://pic.imgdb.cn/item/63cd3516be43e0d30e0a5e07.jpg # logo image on the left of the navigation bar
 
 # ---------------------------------------------------------------------------------------
 # Theme style settings
