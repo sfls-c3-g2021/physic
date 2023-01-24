@@ -33,7 +33,7 @@ collections:
   # Used in routes, ie.: /admin/collections/:slug/edit
   - name: "config"
     label: "配置文件"
-    description: "默认文章分类"
+    description: "请不要改动"
     files:
       - label: "Site"
         name: "site_configuration"
