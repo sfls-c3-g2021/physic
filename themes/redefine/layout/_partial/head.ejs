@@ -5,6 +5,7 @@
     <meta name="description" content="<%= page.description || config.description || 'Hexo Theme Redefine' %>">
     <meta name="author" content="<%= theme.base_info.author || config.author || 'Redefine Team' %>">
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    
     <%
     let title = page.title;
     if (is_archive()) {
@@ -22,6 +23,8 @@
         title = __(page.title);
     }
     %>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6864799824324169"
+     crossorigin="anonymous"></script>
     <title>
         <% if (title) { %>
             <%= title %> |
